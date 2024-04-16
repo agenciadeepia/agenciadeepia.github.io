@@ -1,0 +1,479 @@
+* {
+    font-family: "Montserrat";
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+
+}
+
+body {
+    background: radial-gradient(#141447, #000000);
+}
+
+
+/* .container-fluid {
+    background: radial-gradient(#141447, #000005);
+    z-index: 1;
+}
+
+.container-fluid::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../recursos/BG.jpg);
+    mix-blend-mode: normal;
+    z-index: -1;
+} */
+
+
+
+.header {
+    position: relative;
+}
+
+.contendorh1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+h1 {
+    /* margin-left: 2.5em; */
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-image: url("../recursos/logo/LogoDeepia.png");
+    background-size: cover;
+    text-indent: -9999px;
+}
+
+
+.lazoheader {
+    position: absolute;
+    max-height: 5px;
+    min-height: 5px;
+    background-color: #ce2e70;
+    width: 100%;
+    bottom: 50px;
+    z-index: -1;
+}
+
+
+.mainsection {
+    margin-top: 1vw;
+
+}
+
+
+
+/* ESTILOS HIGHLIGHTS */
+.highlights .high1 {
+
+    max-width: 13vw;
+    height: auto;
+    margin-bottom: .5vw;
+    border-radius: 10px !important;
+}
+
+.highlights .high2 {
+
+    max-width: 13vw;
+    height: auto;
+    margin-bottom: .5vw;
+    border-radius: 10px !important;
+}
+
+.highlights .high3 {
+
+    max-width: 13VW;
+    height: auto;
+    border-radius: 10px !important;
+}
+
+.highlights {
+    padding-left: 6vw;
+}
+
+/* FIN ESTILOS HIGHLIGHTS */
+
+
+
+
+
+
+/* ESTILOS CARRUSEL */
+
+
+.carousel-inner img {
+    border-radius: 15px;
+    height: auto;
+}
+
+
+#carrusel {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 3vw;
+}
+
+#carrusel,
+video {
+    max-width: 800px !important;
+    border-radius: 10px;
+    height: auto;
+    overflow: hidden;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    height: 5vw;
+    margin: auto;
+}
+
+
+
+
+
+/* FIN ESTILOS CARRUSEL */
+
+
+
+
+
+
+
+
+
+
+/* ESTILOS INFO */
+
+
+#SectionInfo {
+    margin-top: 1vw;
+}
+
+#SectionInfo p {
+
+    font-size: 1.1em;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+
+h3 {
+    font-weight: 300;
+    font-size: 1em;
+    color: #7B3F92;
+    display: inline-block;
+}
+
+span img {
+    display: inline-block;
+    width: 22px;
+}
+
+
+
+.iconosareas {
+    padding-right: 3vw;
+    justify-content: right;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+
+}
+
+.iconosareas a {
+    width: 60px;
+    width: auto;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.iconosareas img {
+    max-width: 35px;
+}
+
+
+.icon-3d:hover {
+    background-color: #5DBEE2;
+}
+
+
+.icon-prog {
+    background-color: #7B3F92;
+}
+
+.icon-motion:hover {
+    background-color: #F1B800;
+}
+
+.icon-dg:hover {
+    background-color: #4459A5;
+}
+
+.icon-3d:hover img,
+.icon-dg:hover img,
+.icon-motion:hover img,
+.icon-prog img {
+
+    filter: brightness(0) invert(1);
+}
+
+.info {
+    margin-left: -1vh;
+    padding-right: 2vw;
+}
+
+
+
+/* FIN ESTILOS INFO */
+
+
+
+/* ESTILOS RELACIONADOS */
+
+
+
+
+.contenedorRelated {
+    /* margin-top: 5vh; */
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    padding: 1vw 0;
+
+}
+
+.contenedorRelated img {
+    border-radius: 10px;
+    border: 2px solid #7B3F92;
+    max-width: 8em;
+    /* max-width: 123px; */
+    transition: .3s;
+}
+
+.contenedorRelated img:hover {
+    transform: scale(1.2);
+}
+
+
+#carouselExample {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+
+
+
+/* FIN ESTILOS RELACIONADOS */
+
+
+
+
+/* ESTILOS REDES SOCIALES */
+
+.rrss {
+    margin-top: .5vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+}
+
+.rrss img {
+    max-width: 40px;
+}
+
+.rrss a {
+    padding: 1em 0;
+    position: relative;
+}
+
+#rrss-row {
+    --bs-gutter-x: none;
+    --bs-gutter-y: none;
+}
+
+.rrss a:after {
+    position: absolute;
+    content: "";
+    background-color: #e5397b;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: 5px;
+    transition: .3s;
+}
+
+
+.rrss a:hover:after {
+    width: 100%;
+
+}
+
+
+
+
+
+@media (max-width: 1199px) {
+    .iconosareas {
+        justify-content: center;
+        margin-bottom: 3vw;
+        padding: 0 0;
+    }
+
+
+    .highlights {
+        justify-content: center;
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 33px;
+        margin-bottom: 2vw;
+        padding: 0;
+    }
+
+    .carousel-inner {
+
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .info {
+
+        margin: 0 8vw !important;
+
+    }
+
+    #SectionInfo {
+
+        margin-top: 5vw !important;
+        margin-bottom: 5vw;
+
+    }
+
+
+    h2 {
+        font-size: 1.6em;
+
+    }
+
+    #SectionInfo {
+        margin-top: -1vw;
+    }
+
+    #SectionInfo p {
+        font-size: 1em;
+    }
+
+    .info {
+        margin-left: 2vw;
+    }
+
+
+    .contenedorRelated img {
+        max-width: 10vw;
+    }
+
+
+}
+
+@media (max-width: 1145px) {
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    #SectionInfo p {
+        font-size: .93em;
+    }
+
+    .info {
+        margin-left: 0;
+    }
+
+}
+
+
+@media (max-width: 992px) {
+
+    .highlights {
+        display: none !important;
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+    .info {
+        margin: 0 3vw;
+    }
+
+    #SectionInfo {
+
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+
+    }
+
+    .carousel-inner {
+
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .contenedorRelated img {
+        max-width: 15vw;
+        margin-bottom: 2vw;
+    }
+
+
+    .rrss {
+        margin-bottom: 2vw;
+    }
+
+
+
+}
+
+
+@media (max-width: 576px) {
+
+    .rrss img {
+        max-width: 25px;
+    }
+
+
+    h3 {
+        font-size: .8em;
+    }
+
+
+    #SectionInfo p {
+
+        font-size: .8em;
+
+    }
+
+}
