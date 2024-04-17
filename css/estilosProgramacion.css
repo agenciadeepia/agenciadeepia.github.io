@@ -240,6 +240,21 @@ span img {
 }
 
 
+.botondirec{
+    background-color: #7B3F92;
+    color: white;
+    border-radius: 25px;
+    padding: .5vw;
+    font-size: .8em;
+}
+
+
+.botondirec:hover{
+    background-color: #6a2286;
+    /* border: 1px solid white; */
+}
+
+
 
 /* FIN ESTILOS INFO */
 
