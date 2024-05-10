@@ -2,6 +2,15 @@
     font-family: "Montserrat";
 }
 
+
+@font-face {
+    font-family: "Montserrat" !important;
+    src: url(../recursos/fonts/Montserrat-Regular.ttf);
+    /* font-weight: 800;
+    font-style: bold !important; */
+}
+
+
 a {
     text-decoration: none;
     color: white;
@@ -49,7 +58,7 @@ body {
 
 h1 {
     /* margin-left: 2.5em; */
-    
+
     display: block;
     width: 200px;
     height: 100px;
@@ -173,14 +182,14 @@ h2 {
 
 h3 {
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1.2em;
     color: #F1B800;
     display: inline-block;
 }
 
 span img {
     display: inline-block;
-    width: 22px;
+    width: 30px;
 }
 
 
@@ -234,9 +243,10 @@ span img {
 }
 
 .info {
-    margin-left: -3vh;
+    margin-left: -1vh;
     padding-right: 2vw;
-} 
+}
+
 
 
 
@@ -268,6 +278,50 @@ span img {
     transform: scale(1.2);
 }
 
+.image-container {
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+}
+
+.contenedorRelated .image-container:hover {
+    transform: scale(1.2);
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F1B800;
+    border-radius: 10px;
+
+
+}
+
+.overlay-text {
+    color: white;
+    font-size: .8em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.overlay span {
+    font-weight: 300;
+}
+
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
 
 
 /* FIN ESTILOS RELACIONADOS */
@@ -314,6 +368,16 @@ span img {
 
 /* FIN ESTILOS REDES SOCIALES */
 
+
+@media (min-width: 1199px) and (max-width:1600px) {
+
+
+    .info p{
+        font-size: .9em !important;
+    }
+    
+    
+    }
 
 
 
@@ -411,15 +475,27 @@ span img {
 
 @media (max-width: 767px) {
 
-    .info {
-        margin: 0 3vw;
+
+
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    .iconosareas {
+        margin-bottom: 5vh;
+
     }
 
     #SectionInfo {
 
         margin-top: 5vw;
-        margin-bottom: 5vw;
+        margin-bottom: 8vh;
 
+    }
+
+    .info {
+        margin: 0 3vw;
     }
 
     .carousel-inner {
@@ -431,6 +507,10 @@ span img {
     .contenedorRelated img {
         max-width: 15vw;
         margin-bottom: 2vw;
+    }
+
+    .contenedorRelated {
+        gap: 15px
     }
 
 
@@ -447,11 +527,6 @@ span img {
 
     .rrss img {
         max-width: 25px;
-    }
-
-
-    h3 {
-        font-size: .8em;
     }
 
 

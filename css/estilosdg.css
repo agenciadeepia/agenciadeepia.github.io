@@ -2,6 +2,15 @@
     font-family: "Montserrat";
 }
 
+
+@font-face {
+    font-family: "Montserrat" !important;
+    src: url(../recursos/fonts/Montserrat-Regular.ttf);
+    /* font-weight: 800;
+    font-style: bold !important; */
+}
+
+
 a {
     text-decoration: none;
     color: white;
@@ -113,6 +122,26 @@ h1 {
 /* ESTILOS CARRUSEL */
 
 
+.carousel-control-next-icon {
+    background-image: url(../recursos/iconos/FlechaNegraNext.svg);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../recursos/iconos/FlechaNegraPrev.svg);
+}
+
+/* Estilos para fondo claro */
+.fondo-claro {
+    color: black !important;
+    /* Cambiar color de la flecha a negro */
+}
+
+/* Estilos para fondo oscuro (por defecto) */
+.carousel-control-arrow {
+    color: white;
+    /* Color de flecha por defecto (blanco) */
+}
+
 
 
 .carousel-inner img {
@@ -129,8 +158,7 @@ h1 {
 
 #carrusel,
 video {
-    max-width: 800px !important;
-    border-radius: 10px;
+    border-radius: 15px !important;
     height: auto;
     overflow: hidden;
 }
@@ -140,10 +168,6 @@ video {
     height: 5vw;
     margin: auto;
 }
-
-
-
-
 
 /* FIN ESTILOS CARRUSEL */
 
@@ -175,14 +199,15 @@ h2 {
 
 h3 {
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1.2em;
     color: #4459A5;
     display: inline-block;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 span img {
     display: inline-block;
-    width: 22px;
+    width: 30px;
 }
 
 
@@ -236,7 +261,7 @@ span img {
 }
 
 .info {
-    margin-left: -3vh;
+    margin-left: -1vh;
     padding-right: 2vw;
 }
 
@@ -274,18 +299,60 @@ span img {
 }
 
 
-#carouselExample {
-    max-width: 1000px;
-    margin: auto;
+.image-container {
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+}
+
+.contenedorRelated .image-container:hover {
+    transform: scale(1.2);
 }
 
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #4459A5;
+    border-radius: 10px;
 
+
+}
+
+.overlay-text {
+    color: white;
+    font-size: .8em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.overlay span {
+    font-weight: 300;
+}
+
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
 
 
 /* FIN ESTILOS RELACIONADOS */
 
 
+
+#carouselExample {
+    max-width: 1000px;
+    margin: auto;
+}
 
 
 /* ESTILOS REDES SOCIALES */
@@ -329,11 +396,29 @@ span img {
 
 }
 
+@media (min-width: 1199px) and (max-width:1600px) {
 
+
+    .info p{
+        font-size: .9em !important;
+    }
+    
+    
+    }
 
 
 
 @media (max-width: 1199px) {
+
+    .carousel-control-next-icon {
+        background-image: url(../recursos/iconos/FlechaBlancaNext.svg);
+    }
+
+    .carousel-control-prev-icon {
+        background-image: url(../recursos/iconos/FlechaBlancaPrev.svg);
+    }
+
+
     .iconosareas {
         justify-content: center;
         margin-bottom: 3vw;
@@ -412,6 +497,7 @@ span img {
 }
 
 
+
 @media (max-width: 992px) {
 
     .highlights {
@@ -424,19 +510,39 @@ span img {
 
 
 
-
 @media (max-width: 767px) {
 
-    .info {
-        margin: 0 3vw;
+    .contenedorRelated {
+        gap: 15px;
+        margin-left: 3vw;
+    }
+
+
+    .contenedorRelated img{
+        width: 15vw;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    .iconosareas {
+        margin-bottom: 5vh;
+
     }
 
     #SectionInfo {
 
         margin-top: 5vw;
-        margin-bottom: 5vw;
+        margin-bottom: 8vh;
 
     }
+
+    .info {
+        margin: 0 3vw;
+    }
+
+
 
     .carousel-inner {
 
@@ -461,14 +567,12 @@ span img {
 
 @media (max-width: 576px) {
 
+    
+
     .rrss img {
         max-width: 25px;
     }
 
-
-    h3 {
-        font-size: .8em;
-    }
 
 
     #SectionInfo p {

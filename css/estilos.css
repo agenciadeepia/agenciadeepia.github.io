@@ -90,6 +90,7 @@ h1 {
     height: 100%;
     /* display: flex; */
     align-content: center;
+    padding: 0;
 }
 
 
@@ -275,58 +276,162 @@ h1 {
 
 /*ESTILOS IMAGENES INICIO*/
 
+
+
 #contenedor_imagenes {
+    /* display: flex; */
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 
 #contenedor_imagenes img {
-    max-width: 10em;
+    max-width: 8em;
     display: inline-block;
-    margin: 1em;
+    margin: .8em;
     overflow: auto;
     border-radius: 15px;
     transition: .3s;
-}
-
-#contenedor_imagenes .min3d {
-    border: 2px solid #187599;
 
 }
-
-#contenedor_imagenes .mindg {
-    border: 2px solid #151778;
-
-}
-
-#contenedor_imagenes .minmotion {
-    border: 2px solid #F1B800;
-
-}
-
-#contenedor_imagenes .minprog {
-    border: 2px solid #791588;
-
-}
-
-
 
 
 
 #contenedor_imagenes img:hover {
-    max-width: 10em;
-    display: inline-flexbox;
+    /* max-width: 10em;
+    display: inline-flexbox; */
     transform: scale(1.2);
 
 }
 
 
+#contenedor_imagenes .iconosareas img:hover {
+    transform: scale(1.25);
+    text-shadow: 0px 0px 20px rgba(153, 153, 153, 1);
+}
+
+/* ------ */
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+}
+
+
+.image-container:hover img {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px rgba(153, 153, 153, 0.3);
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.over-3d {
+    border: 2px solid #5DBEE2;
+}
+
+.over-motion {
+    border: 2px solid #b18801;
+}
+
+.over-dg {
+    border: 2px solid #151778;
+    ;
+}
+
+.over-prog {
+    border: 2px solid #791588;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.overlay span {
+    font-weight: 300;
+}
+
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+
+
+/* -------- */
+
+.areas-index img {
+    width: 6.5em !important;
+    display: inline-block;
+    overflow: auto;
+    border-radius: 50% !important;
+    /* border-radius: 10px !important; */
+    transition: .3s;
+
+}
+
+.areas-index {
+    margin-top: -3vw;
+    margin-bottom: 2vw;
+    gap: 3px !important;
+}
+
+
+.namearea {
+    display: block;
+    font-size: .75em;
+    color: #fff;
+}
+
+.iconosareas {
+    display: inline-block;
+}
+
+
+
+#contenedor_imagenes .min3d {
+    border: 2px solid #187599;
+    /* box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2); */
+}
+
+#contenedor_imagenes .mindg {
+    border: 2px solid #151778;
+    /* box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2); */
+}
+
+#contenedor_imagenes .minmotion {
+    border: 2px solid #b18801;
+    /* box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2); */
+}
+
+#contenedor_imagenes .minprog {
+    border: 2px solid #791588;
+    /* box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2); */
+}
+
+
+
+
 
 /*FIN ESTILOS IMAGENES INICIO*/
-
-
-
-
 
 
 
@@ -392,7 +497,7 @@ h1 {
 
 .footer p {
     /* margin-top: 3vw; */
-    padding: 3rem 0;
+    padding: 1rem 0;
     font-size: 1.8em;
     font-weight: 300;
 }
@@ -402,7 +507,18 @@ h1 {
 /*FIN ESTILOS FOOTER*/
 
 
+
+@media (min-width: 768px) {
+    .iconosmobile {
+        display: none;
+
+    }
+}
+
+
+
 @media (max-width: 991px) {
+
 
     .rrss {
         flex-direction: row;
@@ -476,6 +592,13 @@ h1 {
 @media (max-width: 768px) {
 
 
+    .trabajosinicio {
+        display: none;
+    }
+
+    .iconosareas {
+        display: none;
+    }
 
     #contenedor_imagenes {
         margin-top: 0;
@@ -487,7 +610,10 @@ h1 {
         display: inline-block;
         margin: 1em;
         overflow: auto;
+    }
 
+    .iconosareas:hover img {
+        transform: none !important;
     }
 
 
@@ -498,6 +624,19 @@ h1 {
 
 
 @media (max-width: 576px) {
+
+    .iconosmobile {
+        margin-bottom: 5vh;
+
+    }
+
+    .fotoangie-icon,
+    .fotogian-icon,
+    .fotojuli-icon,
+    .fotopachi-icon {
+        width: 13vw;
+        height: 13vw;
+    }
 
     #contenedor_imagenes {
         margin-top: 0;
@@ -513,9 +652,13 @@ h1 {
     }
 
     .footer p {
-        font-size: 1.3em
+        font-size: 1.3em;
+        margin-top: -5vh;
     }
 
+    .rrss img {
+        width: 30px;
+    }
 
 
 }

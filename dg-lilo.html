@@ -67,23 +67,20 @@
             <div class="col-xl-3 col-lg-12 highlights">
 
 
-                <div>
-
-                    <img class="high1" src="recursos/trabajos/dg/Ilustraciones/Lilo&Stitch/HighLilo1.jpg" />
-
+                <div class="high1 ratio ratio-16x9">
+                    <video src="recursos/trabajos/dg/Ilustraciones/Lilo&Stitch/HighLilo1.mp4"
+                        class="embed-responsive-item" type="video/mp4" autoplay muted loop></video>
                 </div>
 
 
-                <div>
-
-                    <img class="high1" src="recursos/trabajos/dg/Ilustraciones/Lilo&Stitch/HighLilo2.jpg" />
-
+                <div class="high2 ratio ratio-16x9">
+                    <video src="recursos/trabajos/dg/Ilustraciones/Lilo&Stitch/HighLilo2.mp4"
+                        class="embed-responsive-item" type="video/mp4" autoplay muted loop></video>
                 </div>
 
-                <div>
-
-                    <img class="high1" src="recursos/trabajos/dg/Ilustraciones/Lilo&Stitch/HighLilo3.jpg" />
-
+                <div class="high3 ratio ratio-16x9">
+                    <video src="recursos/trabajos/dg/Ilustraciones/Lilo&Stitch/HighLilo3.mp4"
+                        class="embed-responsive-item" type="video/mp4" autoplay muted loop></video>
                 </div>
 
 
@@ -100,11 +97,37 @@
                     <div class="carousel-inner">
 
                         <div class="carousel-item active">
-                            <img src="recursos/trabajos/dg/Ilustraciones/Lilo&Stitch/IlustracionLilo.png" class="d-block w-100" alt="...">
+                            <img src="recursos/trabajos/dg/Ilustraciones/Lilo&Stitch/IlustracionLilo.jpg"
+                                class="d-block w-100" alt="...">
                         </div>
 
+                        <!-- ARMADO -->
+                        <div class="carousel-item ratio ratio-16x9">
+                            <video src="recursos/trabajos/dg/Ilustraciones/Lilo&Stitch/ArmadoLilo.mp4"
+                                class="embed-responsive-item" type="video/mp4" autoplay muted loop></video>
+                        </div>
+                        <!-- CONTORNO -->
+                        <div class="carousel-item ratio ratio-16x9">
+                            <video src="recursos/trabajos/dg/Ilustraciones/Lilo&Stitch/LiloContorno.mp4"
+                                class="embed-responsive-item" type="video/mp4" autoplay muted loop></video>
+                        </div>
+                        <!-- MOCKUP -->
+                        <div class="carousel-item">
+                            <img src="recursos/trabajos/dg/Ilustraciones/Lilo&Stitch/LiloMockup1.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
 
                     </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
                 </div>
 
 
@@ -122,7 +145,7 @@
 
                     <span><img src="recursos/iconos/portfolio/color/dg-icon.png" alt=""></span>
                     <h3>diseño gráfico</h3>
-                    <a href="https://drive.google.com/file/d/1VWEhngIgvtQrYVEkWSJpkAEvBybDiC2U/view?usp=sharing" target="_blank"><h2> Ilustración Lilo & Stitch </h2></a>
+                    <h2> Ilustración Lilo & Stitch </h2>
                     <p>
                         Ilustracion digital de la serie de Disney, Lilo & Stitch.
                         <br>Para su realización nos inspiramos en el poster original realizado por Tom Whalen
@@ -149,25 +172,54 @@
             <div class="row text-center" id="SectionRelated">
 
                 <div class="contenedorRelated">
-                    <a href="dg-arlatte.html">
-                        <img src="recursos/trabajos/dg/Marcas/Arlatte/MinArlatte.jpg" alt="Arlatte">
-                    </a>
-                    <a href="dg-l&l.html">
-                        <img src="recursos/trabajos/dg/Marcas/L&L/MinL&L.jpg"
-                            alt="Libros & Lectores">
-                    </a>
-                    <a href="dg-blancanieves.html">
-                        <img src="recursos/trabajos/dg/Ilustraciones/BlancaNieves/MinBlancaNieves.jpg"
-                            alt="Ilustracion Blanca Nieves">
-                    </a>
-                    <a href="dg-libro-selva.html">
-                        <img src="recursos/trabajos/dg/Ilustraciones/Librodelaselva/MinLibroSelva.jpg"
-                            alt="Ilustracion Libro de la selva">
-                    </a>
-                    <a href="dg-mcdonalds.html">
-                        <img src="recursos/trabajos/dg/Campanas/MinMcDontalds.jpg"
-                            alt="Campaña publicitaria McDonald's">
-                    </a>
+                    <div class="image-container">
+                        <a href="dg-arlatte.html">
+                            <img src="recursos/trabajos/dg/Marcas/Arlatte/MinArlatte.jpg" alt="Arlatte">
+                            <div class="overlay">
+                                <div class="overlay-text"><span>Diseño marca</span><br>Arlatte</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="image-container">
+                        <a href="dg-l&l.html">
+                            <img src="recursos/trabajos/dg/Marcas/L&L/MinL&L.jpg" alt="Libros & Lectores">
+                            <div class="overlay">
+                                <div class="overlay-text"><span>Diseño Marca</span><br>Libros & Lectores</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="image-container">
+                        <a href="dg-blancanieves.html">
+                            <img src="recursos/trabajos/dg/Ilustraciones/BlancaNieves/MinBlancaNieves.jpg"
+                                alt="Ilustracion Blanca Nieves">
+                            <div class="overlay">
+                                <div class="overlay-text"><span>Ilustración</span><br>Blanca Nieves</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="image-container">
+                        <a href="dg-libro-selva.html">
+                            <img src="recursos/trabajos/dg/Ilustraciones/Librodelaselva/MinLibroSelva.jpg"
+                                alt="Ilustracion Libro de la selva">
+                            <div class="overlay">
+                                <div class="overlay-text"><span>Ilustración</span><br>Libro de la Selva</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="image-container">
+                        <a href="dg-mcdonalds.html">
+                            <img src="recursos/trabajos/dg/Campanas/MinMcDontalds.jpg"
+                                alt="Campaña publicitaria McDonald's">
+                            <div class="overlay">
+                                <div class="overlay-text"><span>Campaña</span><br>McDonald's</div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
 
             </div>

@@ -12,7 +12,7 @@
 
 
 
-    <style>
+    <!-- <style>
         video::-webkit-media-controls {
             width: 100%;
             /* Ajusta los controles al ancho del video en navegadores webkit */
@@ -27,7 +27,7 @@
             width: 100%;
             /* Ajusta el panel de controles al ancho del video */
         }
-    </style>
+    </style> -->
 
 
 
@@ -70,7 +70,8 @@
 
                 <a class="icon-prog" href="#"> <img src="recursos/iconos/portfolio/color/prog-icon.png" alt=""> </a>
 
-                <a class="icon-dg" href="dg-arlatte.html"> <img src="recursos/iconos/portfolio/color/dg-icon.png" alt="">
+                <a class="icon-dg" href="dg-arlatte.html"> <img src="recursos/iconos/portfolio/color/dg-icon.png"
+                        alt="">
                 </a>
 
             </div>
@@ -121,29 +122,21 @@
                     <div class="carousel-inner">
 
                         <div class="carousel-item active ratio ratio-16x9">
-                            <video id="video0" src="recursos/trabajos/programacion/Apps/MyPetBlock/MyPetBlock.mp4"
-                                class="embed-responsive-item" type="video/mp4"  controls  loop></video>
+                            <video id="video0" src="recursos/trabajos/programacion/Apps/MyPetBlock/AppMyPetBlock.mp4"
+                                class="embed-responsive-item" type="video/mp4" controls loop></video>
 
                         </div>
 
                         <div class="carousel-item ratio ratio-16x9">
-                            <video src="recursos/trabajos/programacion/Apps/MyPetBlock/MyPetBlockScreen.mp4"
-                                class="embed-responsive-item" type="video/mp4"  controls  loop></video>
+                            <video src="recursos/trabajos/programacion/Apps/MyPetBlock/AppMyPetBlockFuncionalidad.mp4"
+                                class="embed-responsive-item" type="video/mp4" controls loop></video>
 
                         </div>
 
                         <div class="carousel-item">
-                            <img src="recursos/trabajos/programacion/Apps/MyPetBlock/ScreenMPB1.png" class="d-block w-100" alt="...">
+                            <img src="recursos/trabajos/programacion/Apps/MyPetBlock/AppMyPetBlockCapturas.jpg"
+                                class="d-block w-100" alt="...">
                         </div>
-
-                        <div class="carousel-item">
-                            <img src="recursos/trabajos/programacion/Apps/MyPetBlock/ScreenMPB2.png" class="d-block w-100" alt="...">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="recursos/trabajos/programacion/Apps/MyPetBlock/ScreenMPB3.png" class="d-block w-100" alt="...">
-                        </div>
-                        
 
 
                         <button class="carousel-control-prev" type="button" data-bs-target="#carrusel"
@@ -176,13 +169,15 @@
 
                     <span><img src="recursos/iconos/portfolio/color/prog-icon.png" alt=""></span>
                     <h3>programación</h3>
-                    <a href="https://drive.google.com/file/d/18j95ci-4i-BTZUnFSemQb9teS-nU21EJ/view?usp=sharing" target="_blank"><h2>My Pet Block</h2></a>
+                    <h2>My Pet Block</h2></a>
                     <p>
                         La aplicación que funciona como block de notas para que lleves al día todo lo que tenga
                         que ver con tus mascotas.
                         Primero diseñamos en Illustrator y luego la desarrollamos con HTML y CSS.
                     </p>
-                    <a class="botondirec" href="https://drive.google.com/file/d/1G31QGuo-8S6b2aMkjgSwbPK_5h1MilR1/view?usp=sharing" target="_blank"><span>Descargá la app</a>
+                    <a class="botondirec"
+                        href="https://drive.google.com/file/d/1G31QGuo-8S6b2aMkjgSwbPK_5h1MilR1/view?usp=sharing"
+                        target="_blank"><span>Descargá la app</a>
                 </div>
 
 
@@ -198,169 +193,168 @@
 
         <div class="row text-center">
 
+            <button class="boton-ver-apps" onclick="toggleSections()">Ver Webs</button>
+
+            <div class="contenedorRelated">
 
 
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
+                <div id="Webs" class="visually-hidden">
 
-                    <div class="carousel-item active">
 
-                        <div class="contenedorRelated">
-
-                            <a href="programacion-spoilent.html">
-                                <img src="recursos/trabajos/programacion/Apps/Spoilent/MinSpoilent.jpg"
-                                    alt="Spoilent">
-                            </a>
-
-                            <a href="programacion-elreydice.html">
-                                <img src="recursos/trabajos/programacion/Apps/ElReyDice/MinElReyDice.jpg" alt="El Rey dice">
-                            </a>
-
-                            <a href="programacion-fairshoot.html">
-                                <img src="recursos/trabajos/programacion/Juegos/Fairshoot/MinFairshoot.jpg"
-                                    alt="Fairshoot">
-                            </a>
-
-                            <a href="programacion-gymbo.html">
-                                <img src="recursos/trabajos/programacion/Juegos/Gymbofight/MinGymbo.jpg"
-                                    alt="Gymbo Fight">
-                            </a>
-                        </div>
-
+                    <div class="image-container">
+                        <a href="programacion-sneaker.html">
+                            <img src="recursos/trabajos/programacion/Webs/Sneaker/MinSneakers.jpg" alt="Deepia Sneakers">
+                            <div class="overlay">
+                                <div class="overlay-text"><span>Web</span><br>Deepia Sneakers</div>
+                            </div>
+                        </a>
+    
                     </div>
-
-                    <div class="carousel-item">
-
-                        <div class="contenedorRelated">
-
-                            <a href="programacion-sneaker.html">
-                                <img src="recursos/trabajos/programacion/Webs/Sneaker/MinSneakers.jpg"
-                                    alt="Deepia Sneakers">
-
-                            </a>
-
-                            <a href="programacion-deepcoin.html">
-                                <img src="recursos/trabajos/programacion/Webs/Deepcoin/MinDeepcoin.jpg" alt="DeepCoin">
-                            </a>
-
-                            <a href="programacion-technolight.html">
-                                <img src="recursos/trabajos/programacion/Webs/Technolight/MinTechnolight.jpg"
-                                    alt="Technolight">
-                            </a>
-
-                            <a href="programacion-bebamos.html">
-                                <img src="recursos/trabajos/programacion/Webs/Bebamos/MinBebamos.jpg" alt="Bebamos">
-                            </a>
-
-                             <a href="programacion-deepiastore.html">
-                                <img src="recursos/trabajos/programacion/Webs/DeepiaStore/MinStoreDeepia.jpg" alt="Deepia Store">
-                            </a> 
-
-                        </div>
-
+    
+    
+                    <div class="image-container">
+                        <a href="programacion-deepcoin.html">
+                            <img src="recursos/trabajos/programacion/Webs/Deepcoin/MinDeepcoin.jpg" alt="DeepCoin">
+                            <div class="overlay">
+                                <div class="overlay-text"><span>Web</span><br>DeepCoin</div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="image-container">
+                        <a href="programacion-fitness.html">
+                            <img src="recursos/trabajos/programacion/Webs/Fitness/MinFitness.jpg" alt="Fitness Hub">
+                            <div class="overlay">
+                                <div class="overlay-text"><span>Web</span><br>Fitness Hub</div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="image-container">
+                        <a href="programacion-bebamos.html">
+                            <img src="recursos/trabajos/programacion/Webs/Bebamos/MinBebamos.jpg"
+                            alt="Bebamos">
+                            <div class="overlay">
+                                <div class="overlay-text"><span>Web</span><br>Bebamos</div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="image-container">
+                        <a href="programacion-deepiastore.html">
+                            <img src="recursos/trabajos/programacion/Webs/DeepiaStore/MinStoreDeepia.jpg"
+                            alt="Deepia Store">
+                            <div class="overlay">
+                                <div class="overlay-text"><span>Web</span><br>Deepia Store</div>
+                            </div>
+                        </a>
                     </div>
 
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+
+
+                <div id="Apps">
+
+                            
+                <div class="image-container">
+                    <a href="programacion-spoilent.html">
+                        <img src="recursos/trabajos/programacion/Apps/Spoilent/MinSpoilent.jpg" alt="Spoilent">
+                        <div class="overlay">
+                            <div class="overlay-text"><span>App</span><br>Spoilent</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="image-container">
+                    <a href="programacion-elreydice.html">
+                        <img src="recursos/trabajos/programacion/Apps/ElReyDice/MinElReyDice.jpg" alt="El Rey dice">
+                        <div class="overlay">
+                            <div class="overlay-text"><span>App</span><br>El Rey dice</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="image-container">
+                    <a href="programacion-fairshoot.html">
+                        <img src="recursos/trabajos/programacion/Juegos/Fairshoot/MinFairshoot.jpg" alt="Fairshoot">
+                        <div class="overlay">
+                            <div class="overlay-text"><span>Juego</span><br>Fairshoot</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="image-container">
+                    <a href="programacion-gymbo.html">
+                        <img src="recursos/trabajos/programacion/Juegos/Gymbofight/MinGymbo.jpg" alt="Gymbo Fight">
+                        <div class="overlay">
+                            <div class="overlay-text"><span>Juego</span><br>Gymbo Fight</div>
+                        </div>
+                    </a>
+                </div>
+
+
+                </div>
+
+
             </div>
 
-
-
-
-            <!-- <div class="contenedorRelated">
-
-                <a href="programacion-deepcoin.html">
-                    <img src="recursos/trabajos/programacion/Webs/Deepcoin/MinDeepcoin.jpg" alt="DeepCoin">
-
-                </a>
-
-                <a href="programacion-technolight.html">
-                    <img src="recursos/trabajos/programacion/Webs/Technolight/MinTechnolight.jpg" alt="Technolight">
-                </a>
-
-                <a href="programacion-bebamos.html">
-                    <img src="recursos/trabajos/programacion/Webs/Bebamos/MinBebamos.jpg" alt="Bebamos">
-                </a>
-
-                <a href="programacion-deepiastore.html">
-                    <img src="recursos/trabajos/programacion/Webs/DeepiaStore/MinStoreDeepia.jpg" alt="Deepia Store">
-                </a>
-
-                <a href="programacion-spoilent.html">
-                    <img src="recursos/trabajos/programacion/Apps/Spoilent/MinSpoilent.jpg" alt="Spoilent">
-                </a>
-
-
-                <a href="programacion-elreydice.html">
-                    <img src="recursos/trabajos/programacion/Apps/ElReyDice/MinElReyDice.jpg" alt="El Rey dice">
-                </a>
-
-                <a href="programacion-mypetblock.html">
-                    <img src="recursos/trabajos/programacion/Apps/MyPetBlock/MinMPB.jpg" alt="My Pet Block">
-                </a>
-
-                <a href="programacion-fairshoot.html">
-                    <img src="recursos/trabajos/programacion/Juegos/Fairshoot/MinFairshoot.jpg" alt="Fairshoot">
-                </a>
-
-                <a href="programacion-gymbo.html">
-                    <img src="recursos/trabajos/programacion/Juegos/Gymbofight/MinGymbo.jpg" alt="Gymbo Fight">
-                </a>
-
-            </div> -->
-
+            <!-- FIN TRABAJOS RELACIONADO -->
 
         </div>
 
-    </div>
 
 
+        <div class="row" id="rrss-row">
+
+            <div class="rrss">
+
+                <a href="https://www.instagram.com/agencia.deepia/" target="_blank"><img
+                        src="recursos/iconos/rrss/instagram.png" alt="instagram"></a>
+                <a href="https://www.artstation.com/agenciadeepia" target="_blank"><img
+                        src="recursos/iconos/rrss/ArtStation.png" alt="artstation"></a>
+                <a href="mailto:agencia.deepia@gmail.com" target="_blank"><img src="recursos/iconos/rrss/mail.png"
+                        alt="mail"></a>
 
 
-    <!-- FIN TRABAJOS RELACIONADO -->
-
-
-
-    <div class="row" id="rrss-row">
-
-        <div class="rrss">
-
-            <a href="https://www.instagram.com/agencia.deepia/" target="_blank"><img
-                    src="recursos/iconos/rrss/instagram.png" alt="instagram"></a>
-            <a href="https://www.artstation.com/agenciadeepia" target="_blank"><img
-                    src="recursos/iconos/rrss/ArtStation.png" alt="artstation"></a>
-            <a href="mailto:agencia.deepia@gmail.com" target="_blank"><img src="recursos/iconos/rrss/mail.png"
-                    alt="mail"></a>
-
+            </div>
 
         </div>
 
-    </div>
 
 
+        <script>
+            function toggleSections() {
+                var websSection = document.getElementById('Webs');
+                var appsSection = document.getElementById('Apps');
+                var button = document.querySelector('.boton-ver-apps');
+    
+                // Alternar la clase visually-hidden para cambiar la visibilidad de las secciones
+                websSection.classList.toggle('visually-hidden');
+                appsSection.classList.toggle('visually-hidden');
+    
+                // Cambiar el texto del botón
+                if (button.textContent === "Ver Apps y Juegos") {
+                    button.textContent = "Ver Webs";
+                } else {
+                    button.textContent = "Ver Apps y Juegos";
+                }
+            }
+        </script>
 
-    <script src="jq/jquery-3.5.1.slim.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+        <script src="jq/jquery-3.5.1.slim.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $('#carrusel').on('slide.bs.carousel', function () {
-                // Pausa el primer video cuando se cambia de slide
-                document.getElementById('video0').pause();
+        <script>
+            $(document).ready(function () {
+                $('#carrusel').on('slide.bs.carousel', function () {
+                    // Pausa el primer video cuando se cambia de slide
+                    document.getElementById('video0').pause();
+                });
             });
-        });
-    </script>
+        </script>
 
 </body>
 
