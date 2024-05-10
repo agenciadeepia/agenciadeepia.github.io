@@ -4,12 +4,9 @@
 
 
 @font-face {
-    font-family: "Montserrat" !important;
+    font-family: Montserrat;
     src: url(../recursos/fonts/Montserrat-Regular.ttf);
-    /* font-weight: 800;
-    font-style: bold !important; */
 }
-
 
 a {
     text-decoration: none;
@@ -19,7 +16,7 @@ a {
 html,
 body {
     height: 100%;
-
+    font-family: Montserrat;
 }
 
 body {
